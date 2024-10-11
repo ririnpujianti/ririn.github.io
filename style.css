@@ -1,0 +1,182 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #d0e6f7; /* Warna biru pastel */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #a2d5f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative; /* Posisi relatif agar nav bisa diatur absolut */
+}
+
+nav {
+    position: absolute; /* Mengatur posisi absolut */
+    top: 10px; /* Menempelkan navigasi ke atas */
+    right: 20px; /* Menempelkan ke kanan */
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #5c7cfa;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #333;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #5c7cfa;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #5c7cfa;
+}
+
+.about-content {
+    display: flex;
+    align-items: center; /* Menjaga teks dan gambar sejajar */
+    justify-content: center;
+    gap: 20px; /* Jarak antara foto dan teks */
+    margin: 20px; /* Margin untuk menjaga jarak dari tepi */
+}
+
+.about-photo {
+    border-radius: 10px;
+    width: 300px; /* Atur lebar foto sesuai kebutuhan */
+    height: 300px; /* Atur tinggi foto sesuai kebutuhan */
+    object-fit: cover;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects {
+    padding-top: 20px; /* Geser seluruh section lebih ke bawah */
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 190px; /* Jarak dari atas */
+}
+
+
+.projects {
+    display: flex; /* Menyusun elemen secara horizontal */
+    justify-content: space-evenly; /* Membuat jarak yang merata antar elemen */
+    flex-wrap: wrap; /* Memungkinkan elemen turun ke baris berikutnya jika tidak cukup ruang */
+    gap: 20px; /* Memberikan jarak antar proyek */
+    margin: 20px; /* Margin dari tepi */
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column; /* Menyusun gambar dan teks secara vertikal */
+    align-items: center; /* Memusatkan gambar dan teks */
+    width: 240px; /* Ukuran tetap untuk menjaga konsistensi kartu proyek */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    background-color: #f7d0e1; /* Pink pastel */
+    border: 1px solid #ffc0cb;
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.project-photo {
+    width: 100%; /* Mengisi lebar penuh kartu proyek */
+    height: auto; /* Menjaga proporsi gambar */
+    transition: transform 0.3s; /* Efek transisi pada foto */
+}
+
+.view-project {
+    display: inline-block; /* Membuat tombol tampil lebih rapi */
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #a2d5f2; /* Warna biru pastel */
+    color: white;
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+.view-project:hover {
+    background-color: #45a049; /* Warna saat hover */
+    transform: scale(1.1); /* Efek zoom */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Zoom in saat hover pada kartu proyek */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+.project-photo:hover {
+    transform: scale(1.1); /* Zoom in saat hover pada foto proyek */
+}
+
+.clients {
+    margin: 20px; /* Jarak dari tepi */
+    padding
+}
+
+.clients-container {
+    display: flex; /* Menyusun elemen secara horizontal */
+    justify-content: space-evenly; /* Memberikan jarak yang merata antar elemen */
+    align-items: center; /* Memastikan elemen sejajar di tengah secara vertikal */
+    flex-wrap: wrap; /* Mengatur elemen berpindah ke baris berikutnya jika tidak cukup ruang */
+    gap: 20px; /* Jarak antar client-card */
+}
+
+.client-card {
+    display: flex;
+    flex-direction: column; /* Memastikan gambar dan teks tersusun vertikal */
+    align-items: center; /* Memusatkan gambar dan teks */
+    width: 120px; /* Lebar tetap untuk semua client-card */
+}
+
+.client-logo {
+    width: 100px; /* Ukuran lebar gambar yang lebih kecil */
+    height: auto; /* Menjaga proporsi gambar */
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+    transition: transform 0.3s; /* Transisi saat hover */
+}
+
+.client-logo:hover {
+    transform: scale(1.1); /* Memperbesar sedikit saat hover */
+}
